@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>answers.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<ol type="1">
+<li>What GPIO port does the built-in LED on the Blue Pill PCB use?
+Specify the libopencm3 macro name for the port.</li>
+</ol>
+<ul>
+<li>Port C , GPIOC</li>
+</ul>
+<ol start="2" type="1">
+<li>What GPIO PIN does the built-in LED on the Blue Pill PCB use?
+Specify libopencm3 macro name.</li>
+</ol>
+<ul>
+<li>Pin 13 , GPIO13</li>
+</ul>
+<ol start="3" type="1">
+<li>What level is required to turn the built-in LED on for the Blue Pill
+PCB?</li>
+</ol>
+<ul>
+<li>PC13 should be pulled down -&gt; PC13 = 0 (GND in terms of electric
+voltage)</li>
+</ul>
+<ol start="4" type="1">
+<li>What are two factors affecting the chosen loop count in a programmed
+delay in non-multi-tasking environments?</li>
+</ol>
+<ul>
+<li>CPU clock cycle and the fetch time form memory</li>
+</ul>
+<ol start="5" type="1">
+<li>Why are programmed delays not used in a multi-tasking
+environment?</li>
+</ol>
+<ul>
+<li>Multi tasking environments have context switching and delays would
+interfere or be interfered with by that.</li>
+</ul>
+<ol start="6" type="1">
+<li>What three factors affect instruction timing?</li>
+</ol>
+<ul>
+<li>CPU clock cycles, instruction fetch source and the context
+switching</li>
+</ul>
+<ol start="7" type="1">
+<li>What are three modes of an input GPIO port?</li>
+</ol>
+<ul>
+<li>PULL_UP_DOWN, Analog Input, Floating</li>
+</ul>
+<ol start="8" type="1">
+<li>Do the weak pull-up and pull-down resistors participate in an analog
+input?</li>
+</ol>
+<ul>
+<li>No, only in the digital input</li>
+</ul>
+<ol start="9" type="1">
+<li>When is the Schmitt trigger enabled for input ports?</li>
+</ol>
+<ul>
+<li>For digital input</li>
+</ul>
+<ol start="10" type="1">
+<li>Do the weak pull-up and pull-down resistors participate for output
+GPIO ports?</li>
+</ol>
+<ul>
+<li>Yes</li>
+</ul>
+<ol start="11" type="1">
+<li>When configuring a USART TX (transmit) output for push/pull
+operation, which specialization macro shoud be used?</li>
+</ol>
+<ul>
+<li>GPIO_CNF_OUTPUT_PUSHPULL</li>
+</ul>
+<ol start="12" type="1">
+<li>When configuring a pin for LED use, which GPIO mode macro is
+preferredfor low EMI?</li>
+</ol>
+<ul>
+<li>GPIO_MODE_OUTPUT_2_MHZ</li>
+</ul>
+
+</body>
+</html>
